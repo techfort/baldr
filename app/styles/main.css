@@ -1,0 +1,47 @@
+/* Space out content a bit */
+html, body {
+  padding-bottom: 20px;
+  font-family: "goudyregular" !important;
+  color: black;
+  font-size: 20px;
+}
+div { border-radius: 0px !important;}
+
+h1, h2, h3, h4, h5 { font-family: "goudybold" !important; }
+
+ul { width: 100%; list-style-type: none; }
+li { padding: 0px; margin: 0px; width: 100%; text-align: center; }
+a { color: black !important; }
+.header { text-align: center; }
+.capital { vertical-align: middle; float: left;}
+
+.wb {
+  height: 100% !important;
+}
+.left { border-right: 1px solid black;}
+
+
+@font-face {
+    font-family: 'uglyquaregular';
+    src: url('UglyQua-webfont.eot');
+    src: url('UglyQua-webfont.eot?#iefix') format('embedded-opentype'),
+         url('UglyQua-webfont.woff') format('woff'),
+         url('UglyQua-webfont.ttf') format('truetype'),
+         url('UglyQua-webfont.svg#uglyquaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'goudyregular';
+  src: url('GoudyMediaeval-Regular.ttf');
+}
+@font-face {
+  font-family: 'goudyalt';
+  src: url('GoudyMediaeval-Alternate.ttf');
+}
+@font-face {
+  font-family: 'goudybold';
+  src: url('GoudyMediaeval-DemiBold.ttf');
+}
