@@ -1,24 +1,63 @@
 /* Space out content a bit */
-html, body {
+html {
+  
+  position: relative;
+  min-height: 100%;
+}
+body {
   padding-bottom: 20px;
+  padding-top: 50px;
   font-family: "goudyregular" !important;
   color: black;
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 94%;
+  background: #FFFFFF !important;
+  color: #000000;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  border-top: 1px solid #000000;
+}
+.topbar { height: 30px !important; border-bottom: 1px solid black;}
+.footertext { font-size: 0.9em; margin-top: 10px; text-align: center; }
+.panel { box-shadow: none !important;} 
+
 div { border-radius: 0px !important;}
 
 h1, h2, h3, h4, h5 { font-family: "goudybold" !important; }
 
-ul { width: 100%; list-style-type: none; }
-li { padding: 0px; margin: 0px; width: 100%; text-align: center; }
-a { color: black !important; }
+ul { 
+  width: 100%; 
+  list-style-type: none; 
+  background: #FFFFFF !important;
+}
+li { 
+  padding: 4px;
+  margin: 0px;
+  width: 100%;
+  text-align: left;
+  background: #FFFFFF !important;
+}
+a:hover { text-decoration: none !important; }
+a { color: #000000 !important; }
+li a { padding: 4px !important;}
 .header { text-align: center; }
 .capital { vertical-align: middle; float: left;}
-
+.activeitem a { display: inline-block; background: black !important; color: white !important; }
+li.activeitem { background: black !important; display: inline-block;}
 .wb {
   height: 100% !important;
 }
-.left { border-right: 1px solid black;}
+.left { 
+  /* border-right: 1px solid black; */
+  background: #FFFFFF !important;
+}
 
 
 @font-face {

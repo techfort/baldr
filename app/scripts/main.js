@@ -5,9 +5,13 @@ require.config({
     'angular': '../bower_components/angular/angular',
     'angular-resource': '../bower_components/angular-resource/angular-resource',
     'angular-route': '../bower_components/angular-route/angular-route',
+    'angular-sanitize': '../bower_components/angular-sanitize/angular-sanitize',
     'angularAMD': '../bower_components/angularAMD/angularAMD',
     'ngload': '../bower_components/angularAMD/ngload',
-    'MainCtrl': 'controllers/main'
+    'ui-router': '../bower_components/angular-ui-router/release/angular-ui-router',
+    'HomeCtrl': 'controllers/home',
+    'MenuCtrl': 'controllers/menu',
+    'BioCtrl': 'controllers/bio'
   },
   shim: {
     'jquery': {
@@ -18,7 +22,11 @@ require.config({
     },
     'angularAMD': ['angular'],
     'ngload': ['angularAMD'],
-    'angular-route': ['angular']
+    'ui-router': {
+      exports: 'angular',
+      deps: ['angular']
+    },
+    'angular-sanitize': ['angular']
   },
   deps: ['app']
 });
