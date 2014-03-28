@@ -7,19 +7,19 @@ define([
 
   var pages = [{
     name: 'home',
-    label: 'Chapter I:...............On Blades, and Ore.'
+    label: 'Chapter I:......On Blades, and Ore.'
   }, {
     name: 'bio',
-    label: 'Chapter II:..............The History'
+    label: 'Chapter II:.....The Rise of the Sword.'
   }, {
     name: 'members',
-    label: 'Chapter III:.............One by One'
+    label: 'Chapter III:....Champions Eternal'
   }, {
     name: 'faq',
-    label: 'Chapter IV:..............The Oracle of Doom'
+    label: 'Chapter IV:.....The Oracle of Doom'
   }, {
     name: 'contact',
-    label: 'Chapter V:...............Resounding Horn'
+    label: 'Chapter V:......Resounding Horn'
   }],
     controllerName,
     i = 0,

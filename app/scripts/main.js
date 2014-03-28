@@ -1,5 +1,6 @@
 require.config({
   baseUrl: "scripts",
+  urlArgs: "bust=" + (new Date()).getTime(),
   paths: {
     'jquery': '../bower_components/jquery/jquery.min',
     'angular': '../bower_components/angular/angular',

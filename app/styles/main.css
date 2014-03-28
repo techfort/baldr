@@ -1,65 +1,84 @@
 /* Space out content a bit */
+
 html {
-  
   position: relative;
+  height: 100% !important;
   min-height: 100%;
+  background-image: url(../images/a_viking_foray.jpg);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
 }
+
 body {
   padding-bottom: 20px;
   padding-top: 50px;
   font-family: "goudyregular" !important;
   color: black;
   font-size: 19px;
-  line-height: 94%;
-  background: #FFFFFF !important;
+  line-height: 96%;
+  height: 100% !important;
+  min-height: 100% !important;
+  background: rgba(0, 5, 20, 0.3) !important;
   color: #000000;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+
 }
 #footer {
+  display: none;
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
   border-top: 1px solid #000000;
+  color: black;
+  background: white;
 }
-.topbar { height: 30px !important; border-bottom: 1px solid black;}
-.footertext { font-size: 0.9em; margin-top: 10px; text-align: center; }
-.panel { box-shadow: none !important;} 
 
 div { border-radius: 0px !important;}
 
 h1, h2, h3, h4, h5 { font-family: "goudybold" !important; }
-
+h1 { font-size: 2.5em;}
 ul { 
   width: 100%; 
   list-style-type: none; 
-  background: #FFFFFF !important;
+  background: none !important;
 }
 li { 
   padding: 4px;
   margin: 0px;
   width: 100%;
-  text-align: left;
-  background: #FFFFFF !important;
+  text-align: center;
+  background: none !important;
 }
 a:hover { text-decoration: none !important; }
-a { color: #000000 !important; }
+a { color: rgba(255, 255, 255, 0.85); }
 li a { padding: 4px !important;}
-.header { text-align: center; }
+
+/* CLASSES */
+.ngDiv { margin-top: 10px !important; background: rgba(0,0,0, 0.5); padding-bottom: 20px; border-bottom: 8px solid rgba(127,127,127, 0.2);}
+.text { margin-top: 20px; color: rgba(255, 255, 255, 0.85); text-shadow: 1px 1px 2px  #000; }
+.container { background: none !important; height: 100% !important; min-height: 100% !important; }
+.content {}
+.centered { text-align: center; opacity: 0.4;}
+.topbar { background: rgba(0,0,0, 0.5); color: white; padding-top: 5px; border-bottom: 8px solid rgba(127,127,127, 0.2);text-shadow: 1px 1px 2px  #000; }
+.footertext { font-size: 0.9em; margin-top: 10px; text-align: center; }
+.panel { box-shadow: none !important; background: none;} 
+.header { text-align: left; }
 .capital { vertical-align: middle; float: left;}
-.activeitem a { display: inline-block; background: black !important; color: white !important; }
-li.activeitem { background: black !important; display: inline-block;}
+ul.nav li.activeitem:before  { content: "\2666"; }
+ul.nav li:before { content: "\2234";}
+ul.nav li { text-align: justify; }
 .wb {
   height: 100% !important;
 }
-.left { 
-  /* border-right: 1px solid black; */
-  background: #FFFFFF !important;
+.left {
+  
+  text-align: left;
 }
 
-
+/* FONTS */
 @font-face {
     font-family: 'uglyquaregular';
     src: url('UglyQua-webfont.eot');
