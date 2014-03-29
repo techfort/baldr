@@ -7,27 +7,25 @@ define([
 
   var pages = [{
     name: 'home',
-    label: 'Chapter I:......On Blades, and Ore.'
+    label: 'I:......On Blades, and Fate.'
   }, {
     name: 'bio',
-    label: 'Chapter II:.....The Rise of the Sword.'
+    label: 'II:.....The Rise of the Sword.'
   }, {
     name: 'members',
-    label: 'Chapter III:....Champions Eternal'
+    label: 'III:....Champions Eternal'
   }, {
     name: 'faq',
-    label: 'Chapter IV:.....The Oracle of Doom'
+    label: 'IV:.....The Oracle of Doom'
   }, {
     name: 'contact',
-    label: 'Chapter V:......Resounding Horn'
+    label: 'V:......Resounding Horn'
   }],
     controllerName,
     i = 0,
     len = pages.length,
     page;
 
-
-  console.log('loading app.js');
   var app = angular.module('doomswordApp', ['ui.router'])
     .config(['$stateProvider', '$urlRouterProvider',
       function ($stateProvider, $urlRouterProvider) {

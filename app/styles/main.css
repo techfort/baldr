@@ -4,7 +4,7 @@ html {
   position: relative;
   height: 100% !important;
   min-height: 100%;
-  background-image: url(../images/a_viking_foray.jpg);
+  background-image: url(../images/asgardsreien.jpg);
   background-position: 0px 0px;
   background-repeat: repeat-x;
 }
@@ -14,7 +14,7 @@ body {
   padding-top: 50px;
   font-family: "goudyregular" !important;
   color: black;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 96%;
   height: 100% !important;
   min-height: 100% !important;
@@ -57,8 +57,10 @@ a { color: rgba(255, 255, 255, 0.85); }
 li a { padding: 4px !important;}
 
 /* CLASSES */
-.ngDiv { margin-top: 10px !important; background: rgba(0,0,0, 0.5); padding-bottom: 20px; border-bottom: 8px solid rgba(127,127,127, 0.2);}
-.text { margin-top: 20px; color: rgba(255, 255, 255, 0.85); text-shadow: 1px 1px 2px  #000; }
+.doomsword { font-size: 1.1em; text-shadow: 0px 0px 15px rgba(160, 10, 0, 1);}
+.ngDiv { position: relative; height: 100%; margin-top: 10px !important; background: rgba(0,0,0, 0.5); padding-bottom: 20px; 
+  border-bottom: 8px solid rgba(127,127,127, 0.2); box-shadow: 0px 0px 150px rgba(0,0,0, 1.0) inset ; }
+.text { margin-top: 20px; color: rgba(255, 255, 255, 0.85); text-shadow: 1px 1px 4px  #000; }
 .container { background: none !important; height: 100% !important; min-height: 100% !important; }
 .content {}
 .centered { text-align: center; opacity: 0.4;}
@@ -70,6 +72,29 @@ li a { padding: 4px !important;}
 ul.nav li.activeitem:before  { content: "\2666"; }
 ul.nav li:before { content: "\2234";}
 ul.nav li { text-align: justify; }
+.homecontent {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+}
+#videocontainer {
+  position: absolute;
+}
+#videocontainer {
+  top:0%;
+  left:0%;
+  height:100% !important;
+  width:100%;
+  overflow: visible;
+}
+video {
+  position:absolute;
+  z-index:0;
+}
+video.fillWidth {
+  width: 100%;
+}
+
 .wb {
   height: 100% !important;
 }
@@ -77,6 +102,11 @@ ul.nav li { text-align: justify; }
   
   text-align: left;
 }
+.memberslist { width: 100%; display: table; padding: 0px; margin: 0px; list-style-type: none;}
+.memberslist li { display: table-cell; width: 71px; height: 79px;}
+.memberslist li img { opacity: 0.3; }
+.memberslist li:hover img { opacity: 0.9; }
+.memberslist li.active img { opacity: 1.0; }
 
 /* FONTS */
 @font-face {

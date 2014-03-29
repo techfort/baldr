@@ -3,7 +3,9 @@
   html = [
   
     '<div class="navbar navbar-fixed-top topbar">',
-      '<div class="container"><a href="/" class="brand"><img src="images/logo_white.png" width="200px" /></a> &middot; Italian Epic Heavy Metal &middot; </div>',
+      '<div class="container"><a href="/" class="brand"><img src="images/logo_white.png" width="200px" /></a>',
+      '<span class="doomsword">&middot; Italian Epic Heavy Metal &middot;</span>',
+      '</div>',
     '</div>',
     '<div class="container text">',
       '<div class="row">',
@@ -13,7 +15,7 @@
           '</div>',
         '</div>',
         '<div class="col-md-offset-1 col-md-7 right ngDiv">',
-          '<div ui-view="main"></div>',
+          '<div ui-view="main" class="clearfix"></div>',
         '</div>',
       '</div>',
     '</div>',

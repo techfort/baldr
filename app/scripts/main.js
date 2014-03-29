@@ -12,7 +12,10 @@ require.config({
     'ui-router': '../bower_components/angular-ui-router/release/angular-ui-router',
     'HomeCtrl': 'controllers/home',
     'MenuCtrl': 'controllers/menu',
-    'BioCtrl': 'controllers/bio'
+    'BioCtrl': 'controllers/bio',
+    'MembersCtrl': 'controllers/members',
+    'FaqCtrl': 'controllers/faq',
+    'ContactCtrl': 'controllers/contact'
   },
   shim: {
     'jquery': {
