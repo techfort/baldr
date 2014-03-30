@@ -21,7 +21,10 @@
     '</div>',
     '<div id="footer">',
       '<div class="container">',
-        '<p class="footertext">&copy;', date.getFullYear(),' DoomSword</p>',
+        '<p class="footertext">&copy;', date.getFullYear(),' DoomSword &middot; ',
+        '<a href="https://www.facebook.com/pages/DoomSword/271105175523">facebook</a> &middot; ',
+        '<a href="https://github.com/techfort/doomsword">open-source code</a>',
+        '</p>',
       '</div>',
     '</div>'
   ].join('');

@@ -67,13 +67,15 @@ li {
 a:hover { text-decoration: none !important; color: white; }
 a { color: rgba(255, 255, 255, 0.85); }
 li a { padding: 4px !important;}
-
+#footer a { text-shadow: 0px 0px 15px rgba(160, 10, 0, 1); }
 /* CLASSES */
 .doomsword { font-size: 1.1em; text-shadow: 0px 0px 15px rgba(160, 10, 0, 1);}
 .home { opacity: 0.4; }
 .ngDiv { position: relative; height: 100%; background: rgba(0,0,0, 0.5); padding-bottom: 20px; 
-  border-bottom: 8px solid rgba(127,127,127, 0.2); box-shadow: 0px 0px 150px rgba(0,0,0, 1.0) inset; }
-.text { color: rgba(255, 255, 255, 0.85); text-shadow: 1px 1px 4px  #000; }
+  border-bottom: 8px solid rgba(127,127,127, 0.2);
+  box-shadow: 0px 0px 150px rgba(0,0,0, 1.0) inset;
+}
+.text { color: rgba(255, 255, 255, 1.0); text-shadow: 1px 1px 4px  #000; }
 .container { background: none !important; height: 100% !important; min-height: 100% !important; }
 .content {}
 .centered { text-align: center; opacity: 0.4;}
