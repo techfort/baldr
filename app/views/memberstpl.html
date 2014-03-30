@@ -1,0 +1,55 @@
+<div class="membersdiv">
+  <h1>Champions Eternal</h1>
+  <ul class="memberslist">
+    <li class="dm" ng-click="sel = 'dm';" ng-class="{'active': sel == 'dm'}" ><img src="images/coat3.png" /></li>
+    <li class="an" ng-click="sel = 'an'" ng-class="{'active': sel == 'an'}" ><img src="images/coat2.png" /></li>
+    <li class="au" ng-click="sel = 'au'" ng-class="{'active': sel == 'au'}" ><img src="images/coat.png" /></li>
+    <li class="nh" ng-click="sel = 'nh'"  ng-class="{'active': sel == 'nh'}" ><img src="images/coat4.png" /></li>
+    <li class="wl" ng-click="sel = 'wl'" ng-class="{'active': sel == 'wl'}" ><img src="images/coat5.png" /></li>
+  </ul>
+  <div class="memberdetails">
+
+    <div class="memberdiv animated"
+      ng-class="{'fadeIn': sel == 'dm', 'fadeOut': sel != 'dm'}"
+      ng-hide="sel != 'dm'">
+      <h2>Deathmaster</h2>
+      <div>
+      <img src="images/deathmaster.png" class="pull-right" width="150" />
+      Deathmaster is the singer in <doomsword></doomsword>.
+      <p>He created the band together with Guardian Angel I in 1997.</p>
+      Deathmaster played in Warhammer (ITA), Agarthi, Fiurach, DoomSword, Gjallarhorn (ITA), is now the singer in Fury'n'Grace as well as DoomSword.<br />
+      Deathmaster has collaborated with Wotan, Midryasi.<br />
+      Deathmaster's favourite bands are Cirith Ungol, Warlord, Manilla Road, Heavy Load and the whole US Metal scene of the 80s, as well as Bathory.
+      </div>
+    </div>
+
+    <div class="memberdiv animated"
+      ng-class="{'fadeIn': sel == 'an', 'fadeOut': sel != 'an'}"
+      ng-hide="sel != 'an'">
+      <h2>The Ancient</h2>
+      {{ lipsum }}
+    </div>
+
+    <div class="memberdiv animated"
+      ng-class="{'fadeIn': sel == 'au', 'fadeOut': sel != 'au'}"
+      ng-hide="sel != 'au'">
+      <h2>The Autarch</h2>
+      {{ lipsum }}
+    </div>
+
+    <div class="memberdiv animated"
+      ng-class="{'fadeIn': sel == 'nh', 'fadeOut': sel != 'nh'}"
+      ng-hide="sel != 'nh'">
+      <h2>Nidhoggr</h2>
+      {{ lipsum }}
+    </div>
+
+    <div class="memberdiv animated"
+      ng-class="{'fadeIn': sel == 'wl', 'fadeOut': sel != 'wl'}"
+      ng-hide="sel != 'wl'">
+      <h2>Wrathlord</h2>
+      {{ lipsum }}
+    </div>
+
+  </div>
+</div>

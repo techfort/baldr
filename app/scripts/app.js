@@ -36,7 +36,6 @@ define([
 
           page = pages[i];
           controllerName = page.name.charAt(0).toUpperCase() + page.name.substring(1) + 'Ctrl';
-          console.log(i + ':' + controllerName);
           $stateProvider
             .state(page.name, {
               url: '/' + page.name,
@@ -52,9 +51,7 @@ define([
               }
             });
         }
-
         $urlRouterProvider.otherwise('/home');
-
       }
     ]);
   app.constant('pages', pages);
