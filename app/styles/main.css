@@ -2,8 +2,8 @@
 
 html {
   position: relative;
-  height: 100% !important;
-  min-height: 100%;
+  min-height: 100% !important;
+
   background-image: url(../images/asgardsreien.jpg);
   background-position: 0px 0px;
   background-repeat: repeat-x;
@@ -18,17 +18,13 @@ body {
   line-height: 96%;
   height: 100% !important;
   min-height: 100% !important;
-  background: rgba(0, 0, 20, 0.3) !important;
+  background: none;
   color: #000000;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 
 }
-.home {
-  opacity: 0.4;
-}
 #footer {
-  display: none;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -40,6 +36,17 @@ body {
   border-top: 8px solid rgba(127,127,127, 0.2);
   text-shadow: 1px 1px 2px  #000;
 }
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
 blockquote { border-left: 6px solid rgba(127,127,127, 0.2); border-bottom: 1px solid rgba(127,127,127, 0.1);}
 div { border-radius: 0px !important;}
 
@@ -63,9 +70,10 @@ li a { padding: 4px !important;}
 
 /* CLASSES */
 .doomsword { font-size: 1.1em; text-shadow: 0px 0px 15px rgba(160, 10, 0, 1);}
-.ngDiv { position: relative; height: 100%; margin-top: 10px !important; background: rgba(0,0,0, 0.5); padding-bottom: 20px; 
+.home { opacity: 0.4; }
+.ngDiv { position: relative; height: 100%; background: rgba(0,0,0, 0.5); padding-bottom: 20px; 
   border-bottom: 8px solid rgba(127,127,127, 0.2); box-shadow: 0px 0px 150px rgba(0,0,0, 1.0) inset; }
-.text { margin-top: 20px; color: rgba(255, 255, 255, 0.85); text-shadow: 1px 1px 4px  #000; }
+.text { color: rgba(255, 255, 255, 0.85); text-shadow: 1px 1px 4px  #000; }
 .container { background: none !important; height: 100% !important; min-height: 100% !important; }
 .content {}
 .centered { text-align: center; opacity: 0.4;}
