@@ -4,7 +4,7 @@ html {
   position: relative;
   min-height: 100% !important;
 
-  background-image: url(../images/asgardsreien.jpg);
+  background-image: url(../images/bg/asgardsreien.jpg);
   background-position: 0px 0px;
   background-repeat: repeat-x;
 }
@@ -78,6 +78,7 @@ li a { padding: 4px !important;}
 .text { color: rgba(255, 255, 255, 1.0); text-shadow: 1px 1px 4px  #000; }
 .container { background: none !important; height: 100% !important; min-height: 100% !important; }
 .content {}
+.bgs img {margin: 4px; border: 1px solid rgba(255,255,255, 0.7);}
 .centered { text-align: center; opacity: 0.4;}
 .topbar { background: rgba(0,0,0, 0.5); color: white; padding-top: 5px; border-bottom: 8px solid rgba(127,127,127, 0.2);text-shadow: 1px 1px 2px  #000; }
 .footertext { font-size: 0.9em; margin-top: 10px; text-align: center; }

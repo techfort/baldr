@@ -4,7 +4,7 @@
   
     '<div class="navbar navbar-fixed-top topbar">',
       '<div class="container"><a href="/" class="brand"><img src="images/logo_white.png" width="200px" /></a>',
-      '<span class="doomsword">&middot; Epic Heavy Metal &middot;</span>',
+      '<span class="doomsword">&middot; Epic Heavy Metal &middot;</span><bgs></bgs>', 
       '</div>',
     '</div>',
     '<div class="container text clearfix">',
@@ -22,8 +22,8 @@
     '<div id="footer">',
       '<div class="container">',
         '<p class="footertext">&copy;', date.getFullYear(),' DoomSword &middot; ',
-        '<a href="https://www.facebook.com/pages/DoomSword/271105175523">facebook</a> &middot; ',
-        '<a href="https://github.com/techfort/doomsword">open-source code</a>',
+        '<a href="https://www.facebook.com/pages/DoomSword/271105175523" target="_blank">facebook</a> &middot; ',
+        '<a href="https://github.com/techfort/doomsword" target="_blank">open-source code</a>',
         '</p>',
       '</div>',
     '</div>'

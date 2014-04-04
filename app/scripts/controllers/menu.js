@@ -1,7 +1,8 @@
 define([
   'app',
   'jquery',
-  'directives/menuitem'
+  'directives/menuitem',
+  'directives/bgs'
 ], function (app, $) {
 
   app.register.controller('MenuCtrl', ['$scope', 'Site', '$utils',
