@@ -5,8 +5,9 @@ define([
   'directives/bgs'
 ], function (app, $) {
 
-  app.register.controller('MenuCtrl', ['$scope', 'Site', '$utils',
-    function MenuCtrl($scope, Site, $utils) {
+  app.register.controller('MenuCtrl', ['$scope', 'Site', '$utils', '$state',
+    function MenuCtrl($scope, Site, $utils, $state) {
+
       $scope.pages = Site.getPages();
 
       $scope.$watch(function () {
@@ -18,6 +19,8 @@ define([
       $scope.setActive = function (page) {
         Site.setActive(page);
       };
+
+      $scope.setActive($state.current.name);
 
     }
   ]);
