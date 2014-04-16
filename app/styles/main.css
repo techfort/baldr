@@ -129,6 +129,7 @@ video.fillWidth {
 .memberslist li img { opacity: 0.3; }
 .memberslist li:hover img { opacity: 0.9; }
 .memberslist li.active img { opacity: 1.0; }
+.faq { text-align: center; }
 .techdata { font-family: "Lucida Console", Monaco, monospace; font-size: 0.7em; background: black; padding: 4px; margin: 4px;}
 .techdata a { color: #800020; text-decoration: underline;}
 

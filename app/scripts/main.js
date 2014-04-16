@@ -1,4 +1,3 @@
-
 /*
 Copyright (c) 2014, d3athmast3r @ techfort <info.techfort@gmail.com>
 All rights reserved.
@@ -28,10 +27,9 @@ of the authors and should not be interpreted as representing official policies,
 either expressed or implied, of the FreeBSD Project.
 */
 
-require.config({
-  baseUrl: "scripts",
-  urlArgs: "bust=" + (new Date()).getTime(), // development only
-  paths: {
+(function () {
+  var paths = {
+    'r': '../bower_components/requirejs/require',
     'jquery': '../bower_components/jquery/jquery.min',
     'angular': '../bower_components/angular/angular',
     'angular-resource': '../bower_components/angular-resource/angular-resource',
@@ -40,27 +38,37 @@ require.config({
     'angularAMD': '../bower_components/angularAMD/angularAMD',
     'ngload': '../bower_components/angularAMD/ngload',
     'ui-router': '../bower_components/angular-ui-router/release/angular-ui-router',
-    'HomeCtrl': 'controllers/home',
+    'config': './config',
     'MenuCtrl': 'controllers/menu',
+    'HomeCtrl': 'controllers/home',
     'BioCtrl': 'controllers/bio',
     'MembersCtrl': 'controllers/members',
     'FaqCtrl': 'controllers/faq',
     'ContactCtrl': 'controllers/contact'
-  },
-  shim: {
-    'jquery': {
-      exports: '$'
+  };
+  require.config({
+    baseUrl: "scripts",
+    urlArgs: "bust=" + (new Date()).getTime(), // development only
+    paths: paths,
+    shim: {
+      'jquery': {
+        exports: '$'
+      },
+      'angular': {
+        exports: 'angular'
+      },
+      'angularAMD': ['angular'],
+      'ngload': ['angularAMD'],
+      'ui-router': {
+        exports: 'angular',
+        deps: ['angular']
+      },
+      'angular-sanitize': ['angular']
     },
-    'angular': {
-      exports: 'angular'
-    },
-    'angularAMD': ['angular'],
-    'ngload': ['angularAMD'],
-    'ui-router': {
-      exports: 'angular',
-      deps: ['angular']
-    },
-    'angular-sanitize': ['angular']
-  },
-  deps: ['app']
-});
+    include: ['r'],
+    out: 'doomsword.min.js',
+    deps: ['app']
+  });
+
+  try { module.exports = paths } catch (err) {}
+}());

@@ -1,32 +1,19 @@
 define([
+  'config',
   'angularAMD',
+  'require',
   'ui-router'
-], function (angularAMD) {
+], function (config, angularAMD, require) {
 
   'use strict';
-
-  var pages = [{
-    name: 'home',
-    label: 'I:......On Blades, and Fate.'
-  }, {
-    name: 'bio',
-    label: 'II:.....The Rise of the Sword.'
-  }, {
-    name: 'members',
-    label: 'III:....Champions Eternal'
-  }, {
-    name: 'faq',
-    label: 'IV:.....The Oracle of Doom'
-  }, {
-    name: 'contact',
-    label: 'V:......Resounding Horn'
-  }],
+  
+  var pages = config.pages,
     controllerName,
     i = 0,
     len = pages.length,
     page;
 
-  var app = angular.module('doomswordApp', ['ui.router'])
+  var app = angular.module(config.appName, ['ui.router'])
     .config(['$stateProvider', '$urlRouterProvider',
       function ($stateProvider, $urlRouterProvider) {
 
@@ -51,6 +38,7 @@ define([
               }
             });
         }
+
         $urlRouterProvider.otherwise('/home');
       }
     ]);
