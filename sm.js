@@ -81,7 +81,7 @@ if (command === 'add') {
       console.log('Config file saved');
     }
   });
-  fs.writeFile('./app/views/' + arg + '.html', '<h1>Hello ' + arg + '</h1>', function (err) {
+  fs.writeFile('./app/views/' + arg + '.html', '<h1>' + process.argv[4] + '</h1>', function (err) {
     if (err) {
       console.log('Could not write file');
     } else {
