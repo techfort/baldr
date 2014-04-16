@@ -21,6 +21,26 @@ var siteConfig = {
     {
       "name": "contact",
       "label": "V:......Resounding Horn"
+    },
+    {
+      "name": "news",
+      "label": "VI: Hear ye! "
+    },
+    {
+      "name": "news",
+      "label": "VI: Hear ye! "
+    },
+    {
+      "name": "news",
+      "label": "VI: Hear ye! "
+    },
+    {
+      "name": "news",
+      "label": "VI: Hear ye! "
+    },
+    {
+      "name": "news",
+      "label": "VI: Hear ye! "
     }
   ]
 }

@@ -1,5 +1,6 @@
 var config = require('./app/scripts/config.js'),
   fs = require('fs'),
+  colors = require('colors'),
   command = process.argv[2],
   arg = process.argv[3],
   tplHead = '(function () {\n' +
@@ -19,29 +20,40 @@ var config = require('./app/scripts/config.js'),
     '  app.register.controller(\'%s\', [\'$scope\', \'Site\', \'$utils\',\n' +
     '    function %s($scope, Site, $utils) {\n' +
     '  }\n' +
-    ']);';
+    ']);',
+  log = function (msg) {
+    console.log('['.blue + (new Date()).toUTCString().green + ']: '.blue + msg.green);
+  },
+  error = function (msg) {
+    console.log('['.blue + (new Date()).toUTCString().green + ']: '.blue + msg.red);
+  };
 
 if (command === 'remove') {
   var i = 0,
     len = config.pages.length,
-    output;
+    output,found = false;
   for (i; i < len; i += 1) {
     if (config.pages[i].name === arg) {
       config.pages.splice(i, 1);
+      found = true;
       break;
     }
+  }
+  if (found === false) {
+    error('Could not find page ' + arg + ', aborting.');
+    return;
   }
   output = tplHead + JSON.stringify(config, null, 2) + tplFooter;
   fs.writeFile('./app/scripts/config.js', output, function (err) {
     if (err) {
-      console.log('Could not write file');
+      error('Could not write file');
     } else {
-      console.log('Config file saved');
+      log('Config file saved');
     }
   });
   fs.readFile('./app/scripts/main.js', 'utf8', function (err, data) {
     if (err) {
-      console.log('Could not read main.js');
+      error('Could not read main.js');
       return;
     }
     if (data) {
@@ -50,9 +62,9 @@ if (command === 'remove') {
       data = data.replace(ctrl, '');
       fs.writeFile('./app/scripts/main.js', data, function (err) {
         if (err) {
-          console.log('Could not update main.js');
+          error('Could not update main.js');
         } else {
-          console.log('main.js updated');
+          log('main.js updated');
         }
       });
 
