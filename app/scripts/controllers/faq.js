@@ -1,6 +1,5 @@
 define([
-  'app',
-  'directives/doomsword'
+  'app'
 ], function (app) {
 
   app.register.controller('FaqCtrl', ['$scope', 'Site', '$utils',
