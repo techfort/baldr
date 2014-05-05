@@ -1,26 +1,26 @@
 (function () {
 var siteConfig = {
-  "appName": "doomswordApp",
+  "appName": "mySite",
   "pages": [
     {
       "name": "home",
-      "label": "I:......On Blades, and Fate."
+      "label": "home page"
     },
     {
       "name": "bio",
-      "label": "II:.....The Rise of the Sword."
+      "label": "about page"
     },
     {
-      "name": "members",
-      "label": "III:....Champions Eternal"
+      "name": "articles",
+      "label": "articles page"
     },
     {
       "name": "faq",
-      "label": "IV:.....The Oracle of Doom"
+      "label": "FAQ page"
     },
     {
       "name": "contact",
-      "label": "V:......Resounding Horn"
+      "label": "contact page"
     }
   ]
 }

@@ -39,15 +39,10 @@ either expressed or implied, of the FreeBSD Project.
     'ngload': '../bower_components/angularAMD/ngload',
     'ui-router': '../bower_components/angular-ui-router/release/angular-ui-router',
     'config': './config',
-    'MenuCtrl': 'controllers/menu',
-    'NewsCtrl': 'controllers/news',
-    'NewsCtrl': 'controllers/news',
-    'NewsCtrl': 'controllers/news',
-    'NewsCtrl': 'controllers/news',
-    'NewsCtrl': 'controllers/news',
     'HomeCtrl': 'controllers/home',
+    'MenuCtrl': 'controllers/menu',
     'BioCtrl': 'controllers/bio',
-    'MembersCtrl': 'controllers/members',
+    'ArticlesCtrl': 'controllers/articles',
     'FaqCtrl': 'controllers/faq',
     'ContactCtrl': 'controllers/contact'
   };
@@ -71,7 +66,7 @@ either expressed or implied, of the FreeBSD Project.
       'angular-sanitize': ['angular']
     },
     include: ['r'],
-    out: 'doomsword.min.js',
+    out: 'baldr.min.js',
     deps: ['app']
   });
 

@@ -3,19 +3,14 @@
 html {
   position: relative;
   min-height: 100% !important;
-
-  background-image: url(../images/bg/asgardsreien.jpg);
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
 }
 
 body {
   padding-bottom: 20px;
   padding-top: 50px;
-  font-family: "goudyregular" !important;
-  color: black;
+  font-family: Arial !important;
+  color: #222;
   font-size: 20px;
-  line-height: 96%;
   height: 100% !important;
   min-height: 100% !important;
   background: none;
@@ -24,23 +19,25 @@ body {
   margin-bottom: 60px;
 
 }
+
+.container { background: #eee; }
+
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background: rgba(0,0,0, 0.5);
-  color: white;
+
   padding-top: 5px; 
   border-top: 8px solid rgba(127,127,127, 0.2);
-  text-shadow: 1px 1px 2px  #000;
+
 }
 
 body > .container {
   padding: 60px 15px 0;
 }
-
+.brand img { max-height: 40px; width: auto;}
 #footer > .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -50,7 +47,6 @@ body > .container {
 blockquote { border-left: 6px solid rgba(127,127,127, 0.2); border-bottom: 1px solid rgba(127,127,127, 0.1);}
 div { border-radius: 0px !important;}
 
-h1, h2, h3, h4, h5 { font-family: "worn" !important; }
 h1 { font-size: 2.0em;}
 ul { 
   width: 100%; 
@@ -64,104 +60,23 @@ li {
   text-align: center;
   background: none !important;
 }
-a:hover { text-decoration: none !important; color: white; }
-a { color: rgba(255, 255, 255, 0.85); }
+a:hover { text-decoration: none !important; color: #ccc; }
 li a { padding: 4px !important;}
-#footer a { text-shadow: 0px 0px 15px rgba(160, 10, 0, 1); }
+#footer a { }
 /* CLASSES */
-.doomsword { font-size: 1.1em; text-shadow: 0px 0px 15px rgba(160, 10, 0, 1);}
 .home { opacity: 0.4; }
-.ngDiv { position: relative; height: 100%; background: rgba(0,0,0, 0.5); padding-bottom: 20px; 
-  border-bottom: 8px solid rgba(127,127,127, 0.2);
-  box-shadow: 0px 0px 150px rgba(0,0,0, 1.0) inset;
-}
-.text { color: rgba(255, 255, 255, 1.0); text-shadow: 1px 1px 2px black; }
 .container { background: none !important; height: 100% !important; min-height: 100% !important; }
 .content {}
-.bgs img {margin: 4px; border: 1px solid rgba(255,255,255, 0.7);}
-.centered { text-align: center; opacity: 0.4;}
-.topbar { background: rgba(0,0,0, 0.5); color: white; padding-top: 5px; border-bottom: 8px solid rgba(127,127,127, 0.2);text-shadow: 1px 1px 2px  #000; }
+.topbar { padding-top: 5px;; border-bottom: 1px solid #ccc; }
 .footertext { font-size: 0.9em; margin-top: 10px; text-align: center; }
 .panel { box-shadow: none !important; background: none;} 
 .header { text-align: left; }
-.capital { vertical-align: middle; float: left;}
 ul.nav li.activeitem:before  { content: "\2666"; }
 ul.nav li:before { content: "\2234";}
 ul.nav li { text-align: justify; }
 
 ul.horizontal { list-style-type: none; display: table; margin: 0; padding: 0; width: 100%;}
 ul.horizontal li { display: table-cell; vertical-align: top; width: 20%;}
-ul.horizontal li img { opacity: 0.85; padding: 8px; border: 1px solid rgba(120, 120, 120, 0.5);}
-.homecontent {
-  z-index: 1;
-  position: absolute;
-  height: 100% !important;
-  overflow: visible;
-}
-#videocontainer {
-  position: absolute;
-}
-#videocontainer {
-  top:0%;
-  left:0%;
-  height:100% !important;
-  width:100%;
-  overflow: visible;
-}
-video {
-  position:absolute;
-  z-index:0;
-}
-video.fillWidth {
-  width: 100%;
-}
-
-.wb {
-  height: 100% !important;
-}
-.left { 
-  text-align: left;
-}
-.members { background: url(../images/hod.jpg) center;}
-.members h1, .members h2, .members h4, .members h5 { color: rgba(255,255,255, 1); }
-.memberslist { width: 100%; display: table; padding: 0px; margin: 0px; list-style-type: none;}
-.memberslist li { display: table-cell; width: 71px; height: 79px;}
-.memberslist li img { opacity: 0.3; }
-.memberslist li:hover img { opacity: 0.9; }
-.memberslist li.active img { opacity: 1.0; }
-.faq { text-align: center; }
-.techdata { font-family: "Lucida Console", Monaco, monospace; font-size: 0.7em; background: black; padding: 4px; margin: 4px;}
+ul.horizontal li img { opacity: 0.85; padding: 8px; }
+.techdata { font-family: "Lucida Console", Monaco, monospace; color: white; font-size: 0.7em; background: black; padding: 4px; margin: 4px;}
 .techdata a { color: #800020; text-decoration: underline;}
-
-
-/* FONTS */
-@font-face {
-    font-family: 'uglyquaregular';
-    src: url('UglyQua-webfont.eot');
-    src: url('UglyQua-webfont.eot?#iefix') format('embedded-opentype'),
-         url('UglyQua-webfont.woff') format('woff'),
-         url('UglyQua-webfont.ttf') format('truetype'),
-         url('UglyQua-webfont.svg#uglyquaregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'worn';
-  src: url('worn.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'goudyregular';
-  src: url('GoudyMediaeval-Regular.ttf');
-}
-@font-face {
-  font-family: 'goudyalt';
-  src: url('GoudyMediaeval-Alternate.ttf');
-}
-@font-face {
-  font-family: 'goudybold';
-  src: url('GoudyMediaeval-DemiBold.ttf');
-}
